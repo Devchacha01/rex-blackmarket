@@ -1,9 +1,6 @@
-# Rex Blackmarket
+<img width="2948" height="497" alt="rex_scripts" src="https://github.com/user-attachments/assets/bccc94d2-0702-48aa-9868-08b05cc2a8bd" />
 
-[![Version](https://img.shields.io/badge/version-2.0.6-blue.svg)]()
-[![License](https://img.shields.io/badge/license-Custom-red.svg)]()
-[![Framework](https://img.shields.io/badge/framework-RSG--Core-green.svg)]()
-[![Game](https://img.shields.io/badge/game-RedM-orange.svg)]()
+# Rex Blackmarket
 
 An advanced blackmarket system for RedM servers featuring illegal item trading and blood money laundering mechanics.
 

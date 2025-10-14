@@ -21,7 +21,7 @@ dependencies {
 shared_scripts {
     '@ox_lib/init.lua',
     'shared/utils.lua',
-    'config.lua'
+    'shared/config.lua'
 }
 
 -- client-side scripts
@@ -40,14 +40,6 @@ server_scripts {
 -- UI files
 files {
     'locales/*.json'
-}
-
--- files to ignore in escrow
-escrow_ignore {
-    'shared/*',
-    'locales/*',
-    'config.lua',
-    'README.md'
 }
 
 -- lua version
