@@ -2,32 +2,53 @@ fx_version 'cerulean'
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
 game 'rdr3'
 
-description 'rex-blackmarket'
-version '2.0.5'
+name 'rex-blackmarket'
+author 'RexShack Gaming'
+description 'Advanced blackmarket system RSG Framework'
+version '2.1.0'
+url 'https://discord.gg/YUV7ebzkqs'
 
-shared_scripts {
-    '@ox_lib/init.lua',
-    'config.lua',
+-- core dependencies
+dependencies {
+    'rsg-core',
+    'ox_lib',
+    'rsg-inventory',
+    'oxmysql',
+    'rsg-lawman'
 }
 
+-- shared scripts (loaded on both client and server)
+shared_scripts {
+    '@ox_lib/init.lua',
+    'shared/utils.lua',
+    'config.lua'
+}
+
+-- client-side scripts
 client_scripts {
     'client/client.lua',
     'client/npcs.lua'
 }
 
+-- server-side scripts
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/server.lua',
     'server/versionchecker.lua'
 }
 
-dependencies {
-    'rsg-core',
-    'ox_lib'
-}
-
+-- UI files
 files {
-  'locales/*.json'
+    'locales/*.json'
 }
 
+-- files to ignore in escrow
+escrow_ignore {
+    'shared/*',
+    'locales/*',
+    'config.lua',
+    'README.md'
+}
+
+-- lua version
 lua54 'yes'
