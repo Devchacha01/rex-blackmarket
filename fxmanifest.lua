@@ -13,8 +13,7 @@ dependencies {
     'rsg-core',
     'ox_lib',
     'rsg-inventory',
-    'oxmysql',
-    'rsg-lawman'
+    'oxmysql'
 }
 
 -- shared scripts (loaded on both client and server)

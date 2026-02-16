@@ -6,8 +6,20 @@ Config = {}
 Config.Shop = {
     Items = {
         { name = 'weapon_thrown_molotov', amount = 50, price = 5 },
-        -- Add more items here as needed
-        -- { name = 'weapon_pistol', amount = 10, price = 100 },
+        -- Moonshine Equipment
+        { name = 'mp001_p_mp_still02x', amount = 10, price = 2000 },
+        { name = 'p_boxcar_barrel_09a', amount = 10, price = 500 },
+        -- Ingredients
+        { name = 'water', amount = 100, price = 5 },
+        { name = 'agarita', amount = 50, price = 10 },
+        { name = 'alaskan_ginseng', amount = 50, price = 12 },
+        { name = 'american_ginseng', amount = 50, price = 12 },
+        { name = 'bay_bolete', amount = 50, price = 8 },
+        { name = 'blackberry', amount = 50, price = 6 },
+        { name = 'yarrow', amount = 50, price = 7 },
+        { name = 'black_currant', amount = 50, price = 8 },
+        { name = 'evergreen_huckleberry', amount = 50, price = 9 },
+        { name = 'wild_mint', amount = 50, price = 7 },
     },
     PersistStock = true, -- Should stock save in database and reload after restart
     RestrictedJobs = { 'leo' }, -- Job types that cannot access the shop
